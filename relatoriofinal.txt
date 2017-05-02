@@ -1,0 +1,170 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{caption}
+\usepackage{subfig}
+
+
+\title{Sprint 01}
+\author{Bruno Augusto, Iago Lincon, João Gabriel, Maycow dos Santos}
+\date{25/04/2017}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\maketitle
+		\thispagestyle{empty}
+	\end{titlepage}
+
+	\clearpage
+	\setcounter{page}{1}
+
+	\begin{abstract}
+		Fora designado ao grupo aprender o básico da programação em Python nos seis primeiros capítulos iniciais do livro originalmente nomeado como "Automate the Boring Stuff". Em tais capítulos, é ensinado desde comandos simples como a concatenação proporcionado pelo Python, até a existência de funções, listas, dicionários e suas funcionalidades. Posteriormente, o grupo deveria escolher dois capítulos da parte destinada a programação funcional do livro e aprendê-los para começar a adquirir o conhecimento do que a linguagem proporcionada pelo software trabalhado pode fazer.
+	\end{abstract}
+	
+	
+	\begin{titlepage}
+		\centering\huge \textbf{Parte I:\newline Adicionando Conhecimento}
+	\end{titlepage}
+
+		\clearpage
+		\setcounter{page}{3}
+
+		\section{O básico do Python}
+		O capítulo introduz as expressões matemáticas que são utilizadas dentro da programação do software, noção das variáveis inteiras, pontos flutuantes e strings, concatenação entre strings e o conhecimento da introdução de valores para variáveis.
+		\begin{center}
+				\includegraphics[width=0.7\paperwidth]{imagem01.jpg}
+				\captionof{figure}{Programa que calcula o tamanho do nome do usuário e diz sua idade no ano seguinte}
+		\end{center}
+	
+		\section{Controle de Fluxo}
+		Agora que o mais básico da programação já fora introduzido, é hora de aprender sobre os booleandos, condições para controle de fluxo de dados ou loops, a função range() e o conhecimento sobre a importação de funções do Python, como o \emph{import sys} (para o \emph{sys.exit()}).
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem02.jpg}
+			\captionof{figure}{Baseado em condições, o programa diz se o usuário é Alice ou não}
+		\end{center}
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem04.jpg}
+			\captionof{figure}{O programa \emph{vampire v2.0} corrige o erro da condição age > 100 e age > 2000}
+		\end{center}
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem03.jpg}
+			\captionof{figure}{Demonstrando a função \emph{sys.exit()}}
+		\end{center}
+	
+		\section{Funções}
+		Uma parte muito importante da organização de programas (tanto esteticamente, como funcionalmente) está imposto neste capítulo. A introdução do conceito de funções e seus objetivos.\newline A partir de agora, os programas começam a ficar um pouco mais interessantes e com multifuncionalidades que já foram aprendidas em capítulos anteriores.
+		
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem05.jpg}
+			\captionof{figure}{Introdução ao conceito de funções}
+		\end{center}
+		
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem06.jpg}
+			\captionof{figure}{Global Escope introduzido no programa anterior}
+		\end{center}
+		
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem07.jpg}
+			\captionof{figure}{Programa que reúne todos conceitos estudados até o momento}
+		\end{center}
+		\newpage
+	
+		\section{Listas}
+		Muitas vezes não queremos trabalhar com uma infinidade de variáveis, atribuindo um único valor para cada. Na verdade, na maioria das vezes, precisamos de uma variável que suporta vários valores. No Python, essa função é apresentada pelas listas e tuplas.
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem08.jpg}
+			\captionof{figure}{Programa usado para concatenar os nomes dos bichanos em uma lista}
+		\end{center}
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem09.jpg}
+			\captionof{figure}{Função emph{random} para produzir um jogo de aleatoriedade}
+		\end{center}
+		\newpage
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem10.jpg}
+			\captionof{figure}{Demonstração da transferência de referência através de variáveis locais em uma função}
+		\end{center}
+	
+		\section{Estruturando Dados e Dicionários}
+		Dicionários são extensões de listas, com algumas vantagens e desvantagens dependendo da necessidade do programador. Em geral, eles se tornam muito úteis, principalmente pelo esquema "chave-valor" que é atribuído a cada dicionário.\newline Além disso, possuem a possibilidade de construção dic.-dic. (um dicionário dentro de outro dicionário), função que pode ser muito útil quando você precisa atribuir valores para duas "chaves" diferentes. Esse processo pode simplificar muito a programação de softwares complexos pela acessibilidade que você pode trabalhar com os seus itens.
+	
+		\begin{center}
+			\includegraphics[width=0.5\paperwidth]{imagem11.jpg}
+			\captionof{figure}{Usando um dicionário, criamos uma função que mostra os aniversários dos amigos. Caso este não esteja na lista, ele irá adicioná-lo no dicionário}
+		\end{center}
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem12.jpg}
+			\captionof{figure}{for usado juntamente com a função \emph{pprint} para contar caracteres em uma variável de string}
+		\end{center}
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem13.jpg}
+			\captionof{figure}{Aplicando os conhecimentos adquiridos para desenvolver um protótipo de jogo da velha}
+		\end{center}
+		
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem14.jpg}
+			\captionof{figure}{Programa para demonstrar um dicionário dentro de outro dicionário. Nele ele diz a quantidade de cada item que fora levado para o picnic, caso esse não exista, então = 0}
+		\end{center}
+	
+		\section{Manipulando Strings}
+		Esta secção é destinada para o aprofundamento do seu embasamento teórico sobre as funcionalidades do Python. São introduzidas várias funções que trabalham para modelar sua string (e seus processos) da forma qual for mais conveniente para seu projeto.
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem15.jpg}
+			\captionof{figure}{Faz uma tabela com todos os itens do picnic utilizando as funções \emph{.center(), .ljust(), .rjust()}}
+		\end{center}
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem16.jpg}
+			\captionof{figure}{Demonstração da função \emph{.isdecimal()}}
+		\end{center}
+		\newpage
+	
+		\begin{titlepage}
+			\centering\huge \textbf{Parte II:\newline Primeiras Tarefas}
+		\end{titlepage}
+	
+		\clearpage
+		\setcounter{page}{13}
+	
+		\section{Correspondência de Padrões com as Expressões Regulares}
+		Introduz o conhecimento de uma poderosa ferramenta do Python, a Regular Expressions, ou re (import re). Processos que envolveriam diversas iterações e condições, agora podem ser feitos com uma pequena linha de código como a .search() ou re.compile(r'.....').
+	
+		\begin{figure}[h]
+			\centering
+			\subfloat[isPhoneNumber v.01]{
+			\includegraphics[width=0.45\paperwidth]{imagem17.jpg}}
+			\quad\quad
+			\subfloat[isPhoneNumber v.02]{
+			\includegraphics[width=0.45\paperwidth]{imagem18.jpg}}
+			\caption{Implementação da função que verifica números telefônicos com uma iteração que capta os números automaticamente}
+		\end{figure}
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem19.jpg}
+			\captionof{figure}{As duas versões dos programas anteriores simplificadas agora com a extensão \emph{re}}
+		\end{center}
+		\newpage
+	
+		\section{Lendo e Escrevendo Arquivos}
+		Neste capítulo o foco principal é aprender a interagir com o seu software de sistema operacional. Com este conteúdo, ficará fácil manipular arquivos desejados no seu OS através de algumas linhas de código do seu Python.
+	
+		\begin{center}
+			\includegraphics[width=0.7\paperwidth]{imagem20.jpg}
+			\captionof{figure}{Com todo o conhecimento dos caps. anteriores, o programa recebe substantivos, advérbios ou verbos e junta os elementos digitados pelo usuário formando uma frase ou um texto qual o usuário deseja}
+		\end{center}
+	
+\end{document}
